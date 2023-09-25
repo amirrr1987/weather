@@ -18,7 +18,7 @@ function App() {
   const getWethderData = async (city: string) => {
     try {
       const data = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=d0072763e7554f37a5e45938221909&q=${city}&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=3eedc8beb17248ac8d794032232509=${city}&aqi=no`
       );
       const res = await data.json();
       setCurrent(res);
